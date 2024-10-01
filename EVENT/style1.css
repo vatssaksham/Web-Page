@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Dancing+Script:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Belanosima:wght@600&family=Dancing+Script:wght@500&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.70)),url(images/conference\ image.jpeg);
+  /* background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+ }
+.navbar .logo{
+ display: flex;
+ width: 5%;
+ position:relative;
+ top: 25px;
+ left: 50px;
+}
+.navbar ul{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ bottom: 65px;
+}
+.banner .button{
+ display: flex;
+ /* left: 96em; */
+ /* bottom: 11.5em; */
+ justify-content: end;
+ align-items: flex-start;
+ position: relative;
+ bottom: 5em;
+}
+.banner button{
+  position: relative;
+  bottom: 5.5em;
+  right: 2.7em;
+ }
+ .rapper{
+  position: relative;
+  bottom: 20px;
+ }
+
+.navbar ul li a{
+  font-family: 'Times New Roman', Times, serif;
+ text-decoration: none;
+ color: white;
+ text-transform: uppercase;
+ pointer-events: auto;
+}
+.logo{
+ width: 50px;
+ cursor: pointer;
+ margin: 10px;
+ margin-right: auto;
+}
+.navbar ul li a::after{
+ content: '';
+ background: #009688;
+ height: 2px;
+ width: 100%;
+ position: relative;
+ bottom: 15px;
+ display: block;
+ transform: scaleX(0);
+ transition: 0.5s; 
+ 
+}
+.navbar ul li a:hover:after{
+ transform: scaleX(1);
+ width: 100%;
+}
+.content{
+  font-family: Anton;
+ width: 100%;
+ position: absolute;
+ top: 20%;
+ color: #fff;
+ transform: translateY(-50%);
+ text-align: center;
+ position: relative;
+}
+ .content h1{
+ font-size: 50px;
+ margin-top: 50px;
+}
+.content p{
+ font-family:Dancing Script;
+ letter-spacing: 5px;
+ margin-top: 5px ; 
+ /* position: relative;
+ /* top: 1em; */
+ font-weight:100;
+ line-height: 25px;
+}  
+button{
+ width: 200px;
+ padding: 15px 0;
+ text-align: center;
+ margin: 20px 10px;
+ border-radius: 25px;
+ font-weight: bold;
+ border: 2px solid aqua;
+ background: transparent;
+ color: white;
+ cursor:grab;
+ transition: all 0.5s;
+}
+button a{
+  color: white;
+  text-decoration: none;
+} 
+button a:hover{
+  color: aqua;
+}
+button:hover{
+  background-color: aqua;
+  color: black;
+ transform: scale(0.75);
+}
+.container h1{
+  position: relative;
+  bottom: 20px;
+}
+ #countdown{
+  position: relative;
+  bottom: 20px;
+}
+/* general styling */
+:root {
+ --smaller: .75;
+}
+
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}  
+
+@media screen {
+  
+}
+
+
+ body {
+ align-items: center;
+ /* background-color: #ffd54f; */
+ display: flex;
+ font-family: Anton;
+} 
+
+.container {
+  border: 5px solid white;
+  backdrop-filter: blur(4px);
+  border: outset;
+  margin-bottom: 20%px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+ color: #fff;
+ text-align: center;
+}
+
+h1 {
+ font-weight: normal;
+ letter-spacing: .120rem;
+ text-transform: uppercase;
+}
+
+li {
+ display: inline-block;
+ font-size: 1.5em;
+ list-style-type: none;
+ padding: 1em;
+ text-transform: uppercase;
+}
+
+li span {
+ display: block;
+ font-size: 4.5rem;
+}
+
+@media all and (max-width: 768px) {
+ h1 {
+   font-size: calc(1.0rem * var(--smaller));
+ }
+ 
+ li {
+   font-size: calc(1.110rem * var(--smaller));
+ }
+ 
+ li span {
+   font-size: calc(2.375rem * var(--smaller));
+ }
+}
